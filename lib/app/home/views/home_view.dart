@@ -143,7 +143,7 @@ class HomeView extends GetView<HomeController> {
                       padding: const EdgeInsets.all(8.0),
                       child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                            elevation: 4,
+                            elevation: controller.languageController.text.isNotEmpty?4:0,
                             backgroundColor: Color(0xff10223d),
                             shadowColor: Colors.white,
                             animationDuration:Duration(seconds: 2),
